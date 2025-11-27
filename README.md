@@ -1,2 +1,2 @@
-# sensitive_data_for_testdata
-Contains sensitive data for testing PII,PHI,PCI,CREDENTIALS
+# Data Scanning Service Helper
+Contains sensitive data set for PII,PHI,PCI,CREDENTIALS
