@@ -1,0 +1,36 @@
+{
+  "language": "kotlin",
+  "folder": "tfa-test-data-kotlin",
+  "fixture_files": [
+    "AppSecrets.kt",
+    "LocalDevConfig.kt",
+    ".env.local",
+    "docker-compose.yml",
+    ".github/workflows/ci.yml",
+    "k8s-secret.yaml",
+    "analysis.ipynb",
+    "README-snippets.md"
+  ],
+  "expected_findings": [
+    { "name": "OpenAI API Key", "pattern_hint": "sk-proj-", "file": "AppSecrets.kt" },
+    { "name": "Anthropic API Key", "pattern_hint": "sk-ant-", "file": "AppSecrets.kt" },
+    { "name": "Google AI API Key", "pattern_hint": "AIza", "file": "AppSecrets.kt" },
+    { "name": "Azure OpenAI Key", "pattern_hint": "32-char hex", "file": "AppSecrets.kt" },
+    { "name": "Cohere API Key", "pattern_hint": "cohere_", "file": "AppSecrets.kt" },
+    { "name": "Mistral API Key", "pattern_hint": "mistral_", "file": "AppSecrets.kt" },
+    { "name": "Hugging Face Token", "pattern_hint": "hf_", "file": "AppSecrets.kt" },
+    { "name": "Groq API Key", "pattern_hint": "gsk_", "file": "AppSecrets.kt" },
+    { "name": "Together AI API Key", "pattern_hint": "together_", "file": "AppSecrets.kt" },
+    { "name": "Replicate API Token", "pattern_hint": "r8_", "file": "AppSecrets.kt" },
+    { "name": "GitHub PAT", "pattern_hint": "github_pat_", "file": "AppSecrets.kt" },
+    { "name": "Slack Bot Token", "pattern_hint": "xoxb-", "file": "AppSecrets.kt" },
+    { "name": "AWS Access Key ID", "pattern_hint": "AKIA", "file": "AppSecrets.kt" },
+    { "name": "AWS Secret Access Key", "pattern_hint": "40-char secret", "file": "AppSecrets.kt" },
+    { "name": "JWT Signing Secret", "pattern_hint": "jwt secret", "file": "AppSecrets.kt" },
+    { "name": "Database Password", "pattern_hint": "password assignment", "file": "AppSecrets.kt" }
+  ],
+  "notes": [
+    "All values are synthetic test fixtures.",
+    "Keys are intentionally realistic-looking for scanner validation and are not tied to real accounts."
+  ]
+}

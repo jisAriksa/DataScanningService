@@ -1,0 +1,36 @@
+{
+  "language": "javascript",
+  "folder": "tfa-test-data-javascript",
+  "fixture_files": [
+    "config.js",
+    "dev-client.js",
+    ".env.local",
+    "docker-compose.yml",
+    ".github/workflows/ci.yml",
+    "k8s-secret.yaml",
+    "analysis.ipynb",
+    "README-snippets.md"
+  ],
+  "expected_findings": [
+    { "name": "OpenAI API Key", "pattern_hint": "sk-proj-", "file": "config.js" },
+    { "name": "Anthropic API Key", "pattern_hint": "sk-ant-", "file": "config.js" },
+    { "name": "Google AI API Key", "pattern_hint": "AIza", "file": "config.js" },
+    { "name": "Azure OpenAI Key", "pattern_hint": "32-char hex", "file": "config.js" },
+    { "name": "Cohere API Key", "pattern_hint": "cohere_", "file": "config.js" },
+    { "name": "Mistral API Key", "pattern_hint": "mistral_", "file": "config.js" },
+    { "name": "Hugging Face Token", "pattern_hint": "hf_", "file": "config.js" },
+    { "name": "Groq API Key", "pattern_hint": "gsk_", "file": "config.js" },
+    { "name": "Together AI API Key", "pattern_hint": "together_", "file": "config.js" },
+    { "name": "Replicate API Token", "pattern_hint": "r8_", "file": "config.js" },
+    { "name": "GitHub PAT", "pattern_hint": "github_pat_", "file": "config.js" },
+    { "name": "Slack Bot Token", "pattern_hint": "xoxb-", "file": "config.js" },
+    { "name": "AWS Access Key ID", "pattern_hint": "AKIA", "file": "config.js" },
+    { "name": "AWS Secret Access Key", "pattern_hint": "40-char secret", "file": "config.js" },
+    { "name": "JWT Signing Secret", "pattern_hint": "jwt secret", "file": "config.js" },
+    { "name": "Database Password", "pattern_hint": "password assignment", "file": "config.js" }
+  ],
+  "notes": [
+    "All values are synthetic test fixtures.",
+    "Keys are intentionally realistic-looking for scanner validation and are not tied to real accounts."
+  ]
+}

@@ -1,0 +1,6 @@
+services:
+  api:
+    image: csharp-fixture:latest
+    environment:
+      AZURE_OPENAI_KEY: 2f4d6b8a0c1e3f5d7a9c2e4b6d8f0a1c
+      AWS_ACCESS_KEY_ID: AKIA7TFACS26EDCV

@@ -1,0 +1,6 @@
+services:
+  runner:
+    image: cpp-fixture:latest
+    environment:
+      AWS_ACCESS_KEY_ID: AKIA7TFACP26YZAB
+      AWS_SECRET_ACCESS_KEY: bX9wCu4xD8vN3yP1uQ6rS0tU4vW5xY2zA7zX8vB

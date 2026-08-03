@@ -1,0 +1,6 @@
+services:
+  runner:
+    image: c-fixture:latest
+    environment:
+      AWS_ACCESS_KEY_ID: AKIA7TFAC26CDEF
+      AWS_SECRET_ACCESS_KEY: cY9wDu4xE8vP3yQ1uR6sT0uV4wX5yZ2aA7zX8vB

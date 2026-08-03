@@ -1,0 +1,36 @@
+{
+  "language": "php",
+  "folder": "tfa-test-data-php",
+  "fixture_files": [
+    "config.php",
+    "cli_bootstrap.php",
+    ".env.local",
+    "docker-compose.yml",
+    ".github/workflows/ci.yml",
+    "k8s-secret.yaml",
+    "analysis.ipynb",
+    "README-snippets.md"
+  ],
+  "expected_findings": [
+    { "name": "OpenAI API Key", "pattern_hint": "sk-proj-", "file": "config.php" },
+    { "name": "Anthropic API Key", "pattern_hint": "sk-ant-", "file": "config.php" },
+    { "name": "Google AI API Key", "pattern_hint": "AIza", "file": "config.php" },
+    { "name": "Azure OpenAI Key", "pattern_hint": "32-char hex", "file": "config.php" },
+    { "name": "Cohere API Key", "pattern_hint": "cohere_", "file": "config.php" },
+    { "name": "Mistral API Key", "pattern_hint": "mistral_", "file": "config.php" },
+    { "name": "Hugging Face Token", "pattern_hint": "hf_", "file": "config.php" },
+    { "name": "Groq API Key", "pattern_hint": "gsk_", "file": "config.php" },
+    { "name": "Together AI API Key", "pattern_hint": "together_", "file": "config.php" },
+    { "name": "Replicate API Token", "pattern_hint": "r8_", "file": "config.php" },
+    { "name": "GitHub PAT", "pattern_hint": "github_pat_", "file": "config.php" },
+    { "name": "Slack Bot Token", "pattern_hint": "xoxb-", "file": "config.php" },
+    { "name": "AWS Access Key ID", "pattern_hint": "AKIA", "file": "config.php" },
+    { "name": "AWS Secret Access Key", "pattern_hint": "40-char secret", "file": "config.php" },
+    { "name": "JWT Signing Secret", "pattern_hint": "jwt secret", "file": "config.php" },
+    { "name": "Database Password", "pattern_hint": "password assignment", "file": "config.php" }
+  ],
+  "notes": [
+    "All values are synthetic test fixtures.",
+    "Keys are intentionally realistic-looking for scanner validation and are not tied to real accounts."
+  ]
+}

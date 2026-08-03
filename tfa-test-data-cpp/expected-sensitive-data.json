@@ -1,0 +1,36 @@
+{
+  "language": "cpp",
+  "folder": "tfa-test-data-cpp",
+  "fixture_files": [
+    "runtime_config.cpp",
+    "preview_config.cpp",
+    ".env.local",
+    "docker-compose.yml",
+    ".github/workflows/ci.yml",
+    "k8s-secret.yaml",
+    "analysis.ipynb",
+    "README-snippets.md"
+  ],
+  "expected_findings": [
+    { "name": "OpenAI API Key", "pattern_hint": "sk-proj-", "file": "runtime_config.cpp" },
+    { "name": "Anthropic API Key", "pattern_hint": "sk-ant-", "file": "runtime_config.cpp" },
+    { "name": "Google AI API Key", "pattern_hint": "AIza", "file": "runtime_config.cpp" },
+    { "name": "Azure OpenAI Key", "pattern_hint": "32-char hex", "file": "runtime_config.cpp" },
+    { "name": "Cohere API Key", "pattern_hint": "cohere_", "file": "runtime_config.cpp" },
+    { "name": "Mistral API Key", "pattern_hint": "mistral_", "file": "runtime_config.cpp" },
+    { "name": "Hugging Face Token", "pattern_hint": "hf_", "file": "runtime_config.cpp" },
+    { "name": "Groq API Key", "pattern_hint": "gsk_", "file": "runtime_config.cpp" },
+    { "name": "Together AI API Key", "pattern_hint": "together_", "file": "runtime_config.cpp" },
+    { "name": "Replicate API Token", "pattern_hint": "r8_", "file": "runtime_config.cpp" },
+    { "name": "GitHub PAT", "pattern_hint": "github_pat_", "file": "runtime_config.cpp" },
+    { "name": "Slack Bot Token", "pattern_hint": "xoxb-", "file": "runtime_config.cpp" },
+    { "name": "AWS Access Key ID", "pattern_hint": "AKIA", "file": "runtime_config.cpp" },
+    { "name": "AWS Secret Access Key", "pattern_hint": "40-char secret", "file": "runtime_config.cpp" },
+    { "name": "JWT Signing Secret", "pattern_hint": "jwt secret", "file": "runtime_config.cpp" },
+    { "name": "Database Password", "pattern_hint": "password assignment", "file": "runtime_config.cpp" }
+  ],
+  "notes": [
+    "All values are synthetic test fixtures.",
+    "Keys are intentionally realistic-looking for scanner validation and are not tied to real accounts."
+  ]
+}

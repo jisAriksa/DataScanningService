@@ -1,0 +1,6 @@
+services:
+  worker:
+    image: java-fixture:latest
+    environment:
+      ANTHROPIC_API_KEY: sk-ant-api03-TFA2026JavaFixtureAnthropicA1b2C3d4E5f6G7h8
+      MYSQL_PASSWORD: ProdLikeJavaDbPass!2026

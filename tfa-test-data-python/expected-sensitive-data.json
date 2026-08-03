@@ -1,0 +1,36 @@
+{
+  "language": "python",
+  "folder": "tfa-test-data-python",
+  "fixture_files": [
+    "app_config.py",
+    "model_smoke_test.py",
+    ".env.local",
+    "docker-compose.yml",
+    ".github/workflows/ci.yml",
+    "k8s-secret.yaml",
+    "analysis.ipynb",
+    "README-snippets.md"
+  ],
+  "expected_findings": [
+    { "name": "OpenAI API Key", "pattern_hint": "sk-proj-", "file": "app_config.py" },
+    { "name": "Anthropic API Key", "pattern_hint": "sk-ant-", "file": "app_config.py" },
+    { "name": "Google AI API Key", "pattern_hint": "AIza", "file": "app_config.py" },
+    { "name": "Azure OpenAI Key", "pattern_hint": "32-char hex", "file": "app_config.py" },
+    { "name": "Cohere API Key", "pattern_hint": "cohere_", "file": "app_config.py" },
+    { "name": "Mistral API Key", "pattern_hint": "mistral_", "file": "app_config.py" },
+    { "name": "Hugging Face Token", "pattern_hint": "hf_", "file": "app_config.py" },
+    { "name": "Groq API Key", "pattern_hint": "gsk_", "file": "app_config.py" },
+    { "name": "Together AI API Key", "pattern_hint": "together_", "file": "app_config.py" },
+    { "name": "Replicate API Token", "pattern_hint": "r8_", "file": "app_config.py" },
+    { "name": "GitHub PAT", "pattern_hint": "github_pat_", "file": "app_config.py" },
+    { "name": "Slack Bot Token", "pattern_hint": "xoxb-", "file": "app_config.py" },
+    { "name": "AWS Access Key ID", "pattern_hint": "AKIA", "file": "app_config.py" },
+    { "name": "AWS Secret Access Key", "pattern_hint": "40-char secret", "file": "app_config.py" },
+    { "name": "JWT Signing Secret", "pattern_hint": "jwt secret", "file": "app_config.py" },
+    { "name": "Database Password", "pattern_hint": "password assignment", "file": "app_config.py" }
+  ],
+  "notes": [
+    "All values are synthetic test fixtures.",
+    "Keys are intentionally realistic-looking for scanner validation and are not tied to real accounts."
+  ]
+}

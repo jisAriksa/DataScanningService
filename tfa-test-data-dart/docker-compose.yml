@@ -1,0 +1,6 @@
+services:
+  preview:
+    image: dart-fixture:latest
+    environment:
+      MISTRAL_API_KEY: mistral_TFA2026_dart_fixture_live_b4e8d41f5c6a7b2d9f
+      AWS_ACCESS_KEY_ID: AKIA7TFADT26UVWX

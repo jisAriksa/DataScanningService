@@ -1,0 +1,6 @@
+services:
+  app:
+    image: rust-fixture:latest
+    environment:
+      AWS_SECRET_ACCESS_KEY: wS9wXt4xY8vH3yJ1uK6lM0nP4qR5sT2uA7zX8vB
+      GITHUB_PAT: github_pat_11RSAABBCCDDEEFF00112233445566778899aabbccddeeff

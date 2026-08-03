@@ -1,0 +1,6 @@
+services:
+  php:
+    image: php-fixture:latest
+    environment:
+      GITHUB_PAT: github_pat_11PHPAABBCCDDEEFF00112233445566778899aabbccddeeff
+      AWS_ACCESS_KEY_ID: AKIA7TFAPHP26TGHB

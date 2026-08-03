@@ -1,0 +1,6 @@
+services:
+  runner:
+    image: go-fixture:latest
+    environment:
+      AWS_ACCESS_KEY_ID: AKIA7TFAGO26WSXC
+      AWS_SECRET_ACCESS_KEY: rM9wSp4xT8vC3yD1uE6fG0hJ4kL5mN2sA7zX8vB

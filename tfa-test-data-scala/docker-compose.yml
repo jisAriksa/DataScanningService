@@ -1,0 +1,6 @@
+services:
+  preview:
+    image: scala-fixture:latest
+    environment:
+      AWS_ACCESS_KEY_ID: AKIA7TFASC26MNOP
+      AWS_SECRET_ACCESS_KEY: yU9wZv4xA8vK3yL1uM6nP0qR4sT5uV2wA7zX8vB

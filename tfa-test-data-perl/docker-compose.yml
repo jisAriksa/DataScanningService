@@ -1,0 +1,6 @@
+services:
+  seed:
+    image: perl-fixture:latest
+    environment:
+      TOGETHER_API_KEY: together_TFA2026_perl_fixture_0123456789abcdef
+      AWS_ACCESS_KEY_ID: AKIA7TFAPL26QRST

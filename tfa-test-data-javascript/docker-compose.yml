@@ -1,0 +1,6 @@
+services:
+  api:
+    image: js-fixture:latest
+    environment:
+      GITHUB_PAT: github_pat_11JSAABBCCDDEEFF00112233445566778899aabbccddeeff
+      SLACK_BOT_TOKEN: xoxb-742951863000-TFA2026JSBOT-abcdefghijklmnopqrstuvwx

@@ -1,0 +1,6 @@
+services:
+  app:
+    image: kotlin-fixture:latest
+    environment:
+      GITHUB_PAT: github_pat_11KTAABBCCDDEEFF00112233445566778899aabbccddeeff
+      AWS_ACCESS_KEY_ID: AKIA7TFAKT26YHNU

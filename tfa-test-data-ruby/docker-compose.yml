@@ -1,0 +1,6 @@
+services:
+  console:
+    image: ruby-fixture:latest
+    environment:
+      REPLICATE_API_TOKEN: r8_TFA2026RubyFixtureReplicateToken1234567890abcd
+      AWS_ACCESS_KEY_ID: AKIA7TFARB26RFVC
