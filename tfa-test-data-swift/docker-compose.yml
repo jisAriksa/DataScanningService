@@ -1,0 +1,6 @@
+services:
+  preview:
+    image: swift-fixture:latest
+    environment:
+      AWS_ACCESS_KEY_ID: AKIA7TFASW26QPLM
+      SLACK_BOT_TOKEN: xoxb-582614973000-TFA2026SWIFTBOT-abcdefghijklmnopqrstuvwx

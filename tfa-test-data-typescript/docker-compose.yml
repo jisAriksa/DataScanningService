@@ -1,0 +1,6 @@
+services:
+  worker:
+    image: ts-fixture:latest
+    environment:
+      AZURE_OPENAI_KEY: 8d6b4f2a0c9e7b5d3f1a8c6e4b2d0f9a
+      GITHUB_PAT: github_pat_11TSAABBCCDDEEFF00112233445566778899aabbccddeeff
